@@ -1,4 +1,4 @@
-```
+
 # Cara Menambah Repository ke Software Update OpenWrt
 
 ## Langkah-langkah Instalasi dan Konfigurasi
@@ -34,7 +34,3 @@ Tambahkan custom feeds ke bagian "Custom Feeds". Contoh:
 
 ```
 src/gz custom_arch https://raw.githubusercontent.com/fyn170/my-package/main/aarch64_cortex-a53
-```
-
-
----
