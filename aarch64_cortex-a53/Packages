@@ -30,6 +30,17 @@ Size: 2379
 SHA256sum: c01be8a4702b186ac2877bcda083240c1a32210968debf887a737c0638aad489
 Description:  LuCI support for Cloudflared
 
+Package: luci-app-internet-detector
+Version: 1.0-1
+Depends: libc, internet-detector
+Section: luci
+Architecture: all
+Installed-Size: 7762
+Filename: luci-app-internet-detector_1.0-1_all.ipk
+Size: 8610
+SHA256sum: cb356ddbfedda026865da286432647b8ebaf22e95bffa4dfaeaba08881790b0a
+Description:  LuCI support for internet-detector
+
 Package: luci-app-ramfree
 Version: 1.0
 Depends: libc, luci-lua-runtime
