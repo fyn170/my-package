@@ -39,19 +39,18 @@ Description:  Internet-detector is a small daemon
  Written in Lua using the luaposix library.
 
 Package: luci-app-cloudflared
-Version: 1.1
+Version: 2.0.1-20240113
 Depends: libc, cloudflared
-Source: /feed/luci-app-cloudflared
+Source: package/luci-app-cloudflared
 SourceName: luci-app-cloudflared
-License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1699969091
+SourceDateEpoch: 1700413369
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 2666
-Filename: luci-app-cloudflared_1.1_all.ipk
-Size: 3498
-SHA256sum: a4abfe1196bbd29b945a13026a298faaab79d29a498d97f7c69dea9f98d3c3bc
+Installed-Size: 2754
+Filename: luci-app-cloudflared_2.0.1-20240113_all.ipk
+Size: 3570
+SHA256sum: 222e0d41bcf2706760175d3f043cc61176708caa980f6e55a498973793653e25
 Description:  LuCI support for Cloudflared
 
 Package: luci-app-internet-detector
@@ -100,6 +99,22 @@ Size: 1256
 SHA256sum: e495a1e50fd80d721e0d8bb729bebf44d32cb05b726f139035f729d814b12780
 Description:  LuCI support for ramfree
 
+Package: luci-app-temp-status
+Version: 0.3-5
+Depends: libc, lua, luci-lib-nixio, luci-lib-jsonc
+Source: /home/ubuntu/wrt-project/custom-feeds/luci-app-temp-status
+SourceName: luci-app-temp-status
+License: MIT
+Section: luci
+SourceDateEpoch: 1686402823
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 2032
+Filename: luci-app-temp-status_0.3-5_all.ipk
+Size: 2892
+SHA256sum: 33f978af7a90e839bce89649917e36c693eb053306da8d1f1c5228436eef121e
+Description:  Temperature sensors data for the LuCI status page
+
 Package: luci-app-tinyfm
 Version: 2.6
 Depends: libc, php8, php8-cgi, php8-mod-session, php8-mod-ctype, php8-mod-fileinfo, php8-mod-zip, php8-mod-iconv, php8-mod-mbstring, zoneinfo-asia, luci-lua-runtime
@@ -144,6 +159,21 @@ Filename: luci-theme-alpha_3.9.1-beta-9_all.ipk
 Size: 2765107
 SHA256sum: d907eb69aa1cba8b59016c106d9a030d5784186d6bf6745c8dd7f704c5ce8ce0
 Description:  LuCi Theme For OpenWrt And Alpha OS ONLY - Alpha
+
+Package: luci-theme-tano
+Version: unknown
+Depends: libc
+Source: feeds/luci/themes/luci-theme-tano
+SourceName: luci-theme-tano
+Section: luci
+SourceDateEpoch: 1646223464
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 381997
+Filename: luci-theme-tano_unknown_all.ipk
+Size: 382972
+SHA256sum: 0c28d519c7d91ab954c97603bda24f4c06a9db45e3a6ae947527301fe8e31bd8
+Description:  Tano theme
 
 Package: sing-box
 Version: 1.6.6-1
