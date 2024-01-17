@@ -1,3 +1,26 @@
+Package: cloudflared
+Version: 2024.1.2-1
+Depends: libc, ca-bundle
+Source: /feed/cloudflared
+SourceName: cloudflared
+License: Apache-2.0
+LicenseFiles: LICENSE
+Section: net
+SourceDateEpoch: 1699969091
+Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 8215061
+Filename: cloudflared_2024.1.2-1_aarch64_cortex-a53.ipk
+Size: 8184608
+SHA256sum: c31c4610c0c9aeb2ceaf48f8a72170325c11c6660667619f492688ebae63072b
+Description:  Contains the command-line client for Cloudflare Tunnel, a tunneling
+ daemon that proxies traffic from the Cloudflare network to your origins.
+ 
+ This daemon sits between Cloudflare network and your origin (e.g. a
+ webserver). Cloudflare attracts client requests and sends them to you
+ via this daemon, without requiring you to poke holes on your firewall
+ --- your origin can remain as closed as possible.
+
 Package: internet-detector
 Version: 1.0-3
 Depends: libc, lua, luaposix, libuci-lua
@@ -16,30 +39,51 @@ Description:  Internet-detector is a small daemon
  Written in Lua using the luaposix library.
 
 Package: luci-app-cloudflared
-Version: 1.0.1-20232507
+Version: 1.1
 Depends: libc, cloudflared
-Source: package/luci-app-cloudflared
+Source: /feed/luci-app-cloudflared
 SourceName: luci-app-cloudflared
+License: Apache-2.0
 Section: luci
-SourceDateEpoch: 1682627295
+SourceDateEpoch: 1699969091
 Maintainer: OpenWrt LuCI community
 Architecture: all
-Installed-Size: 1576
-Filename: luci-app-cloudflared_1.0.1-20232507_all.ipk
-Size: 2379
-SHA256sum: c01be8a4702b186ac2877bcda083240c1a32210968debf887a737c0638aad489
+Installed-Size: 2666
+Filename: luci-app-cloudflared_1.1_all.ipk
+Size: 3498
+SHA256sum: a4abfe1196bbd29b945a13026a298faaab79d29a498d97f7c69dea9f98d3c3bc
 Description:  LuCI support for Cloudflared
 
 Package: luci-app-internet-detector
 Version: 1.0-1
 Depends: libc, internet-detector
+Source: /home/ubuntu/wrt-project/custom-feeds/luci-app-internet-detector/luci-app-internet-detector
+SourceName: luci-app-internet-detector
 Section: luci
+SourceDateEpoch: 1693342327
+Maintainer: OpenWrt LuCI community
 Architecture: all
 Installed-Size: 7762
 Filename: luci-app-internet-detector_1.0-1_all.ipk
 Size: 8610
 SHA256sum: cb356ddbfedda026865da286432647b8ebaf22e95bffa4dfaeaba08881790b0a
 Description:  LuCI support for internet-detector
+
+Package: luci-app-ipinfo
+Version: 1.1
+Depends: libc, curl
+Source: /feed/luci-app-ipinfo
+SourceName: luci-app-ipinfo
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1699969091
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 1583
+Filename: luci-app-ipinfo_1.1_all.ipk
+Size: 2433
+SHA256sum: e6a33193fb456e915005e99f36ddb6f1eeb5ae73a9a20704f973e4cff59ad366
+Description:  Displays IP address information in overview via ifconfig.co
 
 Package: luci-app-ramfree
 Version: 1.0
@@ -71,19 +115,35 @@ Size: 1735337
 SHA256sum: 0f4ea27181b7b89c217cb2e551c31d44cd1cd0e7073752145fa27d9d7a6ba10f
 Description:  This is Tiny File Manager, but for LuCI OpenWrt.
 
+Package: luci-app-zerotier
+Version: 1.1
+Depends: libc, zerotier, jsonfilter, ucode
+Source: /feed/luci-app-zerotier
+SourceName: luci-app-zerotier
+License: Apache-2.0
+Section: luci
+SourceDateEpoch: 1699969091
+Maintainer: OpenWrt LuCI community
+Architecture: all
+Installed-Size: 4736
+Filename: luci-app-zerotier_1.1_all.ipk
+Size: 5579
+SHA256sum: 9441abd1dad46c10e5d6f69dc2f478343f244914465c71b6895d278442739fe2
+Description:  LuCI support for ZeroTier
+
 Package: luci-theme-alpha
-Version: 0.3.8-beta-8
+Version: 3.9.1-beta-9
 Depends: libc
-Source: /home/ubuntu/wrt-project/custom-feeds/luci-theme-alpha
+Source: /feed/luci-theme-alpha
 SourceName: luci-theme-alpha
 Section: luci
-SourceDateEpoch: 1692466126
+SourceDateEpoch: 1699969091
 Architecture: all
-Installed-Size: 4603868
-Filename: luci-theme-alpha_0.3.8-beta-8_all.ipk
-Size: 4605230
-SHA256sum: 858e67943345a847b5ca29d7c3ac1287605a6ee08b177dee3af52136bafe18f0
-Description:  Tema LuCi - Alpha
+Installed-Size: 2764162
+Filename: luci-theme-alpha_3.9.1-beta-9_all.ipk
+Size: 2765107
+SHA256sum: d907eb69aa1cba8b59016c106d9a030d5784186d6bf6745c8dd7f704c5ce8ce0
+Description:  LuCi Theme For OpenWrt And Alpha OS ONLY - Alpha
 
 Package: sing-box
 Version: 1.6.6-1
@@ -103,4 +163,21 @@ Size: 9092519
 SHA256sum: e226ef6495c249a54acc3e02d41140ec560fc0f9804ce2ce683678883b4cefd9
 Description:  Sing-box is a universal proxy platform which supports hysteria, SOCKS, Shadowsocks,
  ShadowTLS, Tor, trojan, VLess, VMess, WireGuard and so on.
+
+Package: zerotier
+Version: 1.12.2-2
+Depends: libc, libpthread, libstdcpp6, kmod-tun, ip, libminiupnpc, libnatpmp1, libatomic1
+Source: feeds/packages/net/zerotier
+SourceName: zerotier
+License: BSL 1.1
+LicenseFiles: LICENSE.txt
+Section: net
+SourceDateEpoch: 1698790750
+Maintainer: Moritz Warning <moritzwarning@web.de>
+Architecture: aarch64_cortex-a53
+Installed-Size: 561922
+Filename: zerotier_1.12.2-2_aarch64_cortex-a53.ipk
+Size: 561586
+SHA256sum: 1b8b1ce1252148bc3f61d7cfe88202ccea1e2b094ea9f066c49aa82bf4af976d
+Description:  ZeroTier creates a global provider-independent virtual private cloud network.
 

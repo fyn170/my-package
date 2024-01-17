@@ -33,4 +33,4 @@ Menjadi:
 Tambahkan custom feeds ke bagian "Custom Feeds". Contoh:
 
 ```
-src/gz custom_arch https://raw.githubusercontent.com/fyn170/my-package/main/aarch64_cortex-a53
+src/gz my-package https://raw.githubusercontent.com/fyn170/my-package/main/aarch64_cortex-a53
