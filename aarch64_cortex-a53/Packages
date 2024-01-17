@@ -1,18 +1,18 @@
 Package: cloudflared
 Version: 2024.1.2-1
 Depends: libc, ca-bundle
-Source: /feed/cloudflared
+Source: feeds/packages/net/cloudflared
 SourceName: cloudflared
 License: Apache-2.0
 LicenseFiles: LICENSE
 Section: net
-SourceDateEpoch: 1699969091
+SourceDateEpoch: 1699092796
 Maintainer: Tianling Shen <cnsztl@immortalwrt.org>
-Architecture: aarch64_cortex-a53
-Installed-Size: 8215061
-Filename: cloudflared_2024.1.2-1_aarch64_cortex-a53.ipk
-Size: 8184608
-SHA256sum: c31c4610c0c9aeb2ceaf48f8a72170325c11c6660667619f492688ebae63072b
+Architecture: aarch64_generic
+Installed-Size: 8204455
+Filename: cloudflared_2024.1.2-1_aarch64_generic.ipk
+Size: 8174538
+SHA256sum: c89090027ecc83363cd610f27aeb9cd6b60c58aa9277f42c31ae59339d8abd0e
 Description:  Contains the command-line client for Cloudflare Tunnel, a tunneling
  daemon that proxies traffic from the Cloudflare network to your origins.
  
